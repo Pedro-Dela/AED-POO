@@ -1,0 +1,16 @@
+Atributos e métodos são elementos fundamentais de uma classe em programação orientada a objetos.
+
+Atributos: São variáveis que representam o estado de um objeto. Eles descrevem as características ou propriedades do objeto. Cada objeto da classe terá seus próprios valores para esses atributos.
+
+Métodos: São funções que definem o comportamento dos objetos da classe. Eles representam as ações que um objeto pode realizar ou os processos que ele pode executar. Os métodos geralmente operam nos atributos da classe para realizar alguma tarefa.
+
+Exemplo em notação gráfica de uma classe:
++-----------------------------------+
+|          Retângulo                |
++-----------------------------------+
+| - base: float                     |
+| - altura: float                   |
++-----------------------------------+
+| + calcularArea(): float           |
+| + calcularPerimetro(): float      |
++-----------------------------------+
