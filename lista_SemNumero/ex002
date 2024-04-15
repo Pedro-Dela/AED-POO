@@ -1,0 +1,47 @@
+Em C++, tanto struct quanto class podem ser usados para definir estruturas de dados que contêm membros de dados (variáveis) e membros de função (métodos). A diferença principal entre eles está na visibilidade padrão dos membros:
+
+Struct:
+
+>Por padrão, todos os membros de uma struct são públicos.
+>Os membros públicos podem ser acessados de fora da estrutura.
+>Os membros privados ou protegidos precisam ser explicitamente marcados como tal.
+
+Exemplo:
+struct Pessoa {
+    // Membros públicos por padrão
+    string nome;
+    int idade;
+};
+
+Class:
+
+>Por padrão, todos os membros de uma class são privados.
+>Os membros privados só podem ser acessados dentro da própria classe.
+>Os membros públicos e protegidos podem ser acessados de fora da classe, com a exceção de que os membros protegidos só podem ser acessados pelas classes derivadas.
+
+Exemplo:
+class Carro {
+private:
+    // Membros privados por padrão
+    string marca;
+    int ano;
+
+public:
+    // Membros públicos
+    void acelerar() {
+        cout << "Acelerando...\n";
+    }
+};
+
+Modificadores de Visibilidade:
+
++ (público): Indica que o membro é acessível de fora da classe ou estrutura.
+- (privado): Indica que o membro é acessível somente dentro da classe ou estrutura.
+# (protegido): Indica que o membro é acessível dentro da própria classe e pelas classes derivadas, mas não por outros códigos fora da classe.
+
+Ou seja, a principal diferença entre struct e class em C++ é a visibilidade padrão dos membros. Em uma struct, os membros são públicos por padrão, enquanto em uma class, os membros são privados por padrão.
+
+
+
+
+
