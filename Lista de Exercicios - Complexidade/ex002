@@ -1,0 +1,1 @@
+Dizer que uma função g(n) é Θ(f(n)) significa que, para valores de n grandes o suficiente, g(n) cresce na mesma taxa que f(n).
