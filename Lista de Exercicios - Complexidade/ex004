@@ -1,0 +1,39 @@
+Queremos encontrar onde a(n) < b(n).
+
+Dadas as funções:
+- a(n) = n² - n + 549
+- b(n) = 49n + 49
+
+Vamos encontrar o valor de n para o qual a(n) é menor que b(n):
+
+n² - n + 549 < 49n + 49
+
+Rearranjando, temos:
+
+n² - 50n + 500 < 0
+
+Agora, queremos encontrar os valores de n para os quais essa inequação é verdadeira.
+
+fórmula utilizada:
+
+n = [ -b ± √(b² - 4ac) ] / 2a
+
+Substituindo os valores apropriados para a, b e c:
+
+n = [ -(-50) ± √((-50)² - 4(1)(500)) ] / 2(1)
+
+n = [ 50 ± √(2500 - 2000) ] / 2
+
+n = [ 50 ± √500 ] / 2
+
+n = [ 50 ± 10√5 ] / 2
+
+Os valores possíveis de n são:
+
+n = (50 + 10√5) / 2 e n = (50 - 10√5) / 2
+
+Arredondamos esses valores para o inteiro mais próximo.
+
+n ≈ 26,04 e n ≈ 23,96
+
+Portanto, os valores de n para os quais o algoritmo A leva menos tempo para executar do que o algoritmo B são 24 e 26. Para valores de n menores que 24, o algoritmo B é mais rápido. Para valores de n maiores que 26, o algoritmo A é mais rápido.
