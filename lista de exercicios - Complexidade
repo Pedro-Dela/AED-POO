@@ -1,0 +1,1 @@
+Dizer que uma função g(n) é O(f(n)) significa que, para valores de n suficientemente grandes, a função g cresce no máximo tão rapidamente quanto a função f.
