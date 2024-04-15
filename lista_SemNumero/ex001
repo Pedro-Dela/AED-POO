@@ -1,0 +1,61 @@
+a) Programação Orientada a Objetos (POO):
+A POO é um modelo de programação que se baseia na concepção de objetos, que são instâncias de classes. Ela organiza o código em estruturas chamadas de objetos, que podem conter dados (atributos) e comportamentos (métodos). A POO busca modelar problemas do mundo real de forma mais intuitiva e prática.
+Exemplo:
+
+#include <iostream>
+using namespace std;
+
+// Definição da classe
+class Circulo {
+private:
+    double raio;
+public:
+    // Construtor
+    Circulo(double r) : raio(r) {}
+
+    // Método para calcular a área
+    double calcularArea() {
+        return 3.14 * raio * raio;
+    }
+};
+
+int main() {
+    // Criando uma instância da classe Circulo (objeto)
+    Circulo circ(5.0);
+
+    // Chamando método da classe
+    cout << "Área do círculo: " << circ.calcularArea() << endl;
+
+    return 0;
+}
+
+b) Classe:
+Uma classe é um modelo ou plano para criar objetos. Ela define a estrutura e o comportamento dos objetos que serão instanciados a partir dela. As classes em C++ podem conter membros, como atributos (variáveis) e métodos (funções).
+Exemplo:
+
+// Definição da classe Circulo
+class Circulo {
+private:
+    double raio;
+public:
+    Circulo(double r) : raio(r) {}
+
+    double calcularArea() {
+        return 3.14 * raio * raio;
+    }
+};
+
+c) Instância:
+Em C++, uma instância é um objeto específico criado a partir de uma classe. Quando uma classe é instanciada, um objeto é criado na memória com base nessa classe. Cada instância possui seu próprio conjunto de dados, mas compartilha o comportamento definido pela classe.
+Exemplo:
+
+// Criando uma instância da classe Circulo (objeto)
+Circulo circ(5.0);
+
+d) Objeto:
+Um objeto é uma instância de uma classe. Ele contém dados (atributos) e comportamentos (métodos) conforme definido pela classe. Os objetos são as entidades reais que interagem entre si em um programa orientado a objetos.
+Exemplo:
+Utilizando o mesmo exemplo da classe Cliente, podemos considerar o objeto cliente1 como uma instância da classe Cliente.
+
+// Criando instância da classe Cliente (objeto)
+Cliente cliente1("João", 30);
