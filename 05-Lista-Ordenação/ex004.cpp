@@ -5,12 +5,17 @@
 
 using namespace std;
 
+// Função para gerar alturas aleatórias entre 1 e 3 metros com até duas casas decimais
+float gerarAlturaAleatoria() {
+    // Gerando um número aleatório entre 100 e 300 (1m = 100cm)
+    return (100 + rand() % 201) / 100.0;
+}
+
 // Função para preencher um array com 100 alturas aleatórias entre 1 e 3 metros
 void preencherAlturas(float alturas[]) {
     srand(time(NULL)); // Semente para números aleatórios baseada no tempo atual
     for (int i = 0; i < 100; i++) {
-        // Gerando altura aleatória entre 100 e 300 (1m = 100cm)
-        alturas[i] = (rand() % 200 + 100) / 100.0;
+        alturas[i] = gerarAlturaAleatoria();
     }
 }
 
@@ -33,11 +38,17 @@ int main() {
     // Preenchendo o array com alturas aleatórias entre 1 e 3 metros
     preencherAlturas(alturas);
 
+    // Exibindo todas as alturas coletadas
+    cout << "Alturas coletadas:\n";
+    for (int i = 0; i < 100; i++) {
+        cout << fixed << setprecision(2) << alturas[i] << " metros" << endl;
+    }
+
     // Ordenando as alturas usando Bubble Sort
     bubbleSort(alturas);
 
     // Exibindo as alturas ordenadas
-    cout << "Alturas ordenadas:\n";
+    cout << "\nAlturas ordenadas em ordem crescente:\n";
     for (int i = 0; i < 100; i++) {
         cout << fixed << setprecision(2) << alturas[i] << " metros" << endl;
     }
